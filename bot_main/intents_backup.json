@@ -1,0 +1,167 @@
+{"intents": [
+    {"tag": "greetings1",
+    "patterns": ["Hello", "Hi", "Greetings!", "Hello"],
+    "action": ["chat"],
+    "responses": ["Hi", "Hello", "Hello", "Greetings!"]
+    },
+    {"tag": "greetings2",
+    "patterns":["Hi, How is it going?", "How are you doing?", "How do you do?"],
+    "action": ["chat"],
+    "responses": ["Good", "Fine", "Okay", "Great", "Could be better.", "Not so great.", "Good.", "Very well, thanks.", "Fine, and you?", "I'm doing well. How are you?"]
+    },
+    {"tag": "greetings3",
+    "patterns":["Nice to meet you.", "Hi, nice to meet you.","Top of the morning to you!", "It is a pleasure to meet you."],
+    "action": ["chat"],
+    "responses": [ "Thank you.", "Nice to meet you too", "Thank you. You too.", "Thank you kindly."]
+    },
+    {"tag": "greetings4",
+    "patterns": ["What's up?", "What's up?"],
+    "action": ["chat"],
+    "responses": [ "Not much.", "Not too much.", "Not much, how about you?", "Nothing much.", "The sky's up but I'm fine thanks. What about you?"]
+    },
+    {"tag": "goodbye",
+    "patterns": ["bye bye", "close", "see you later", "tata", "i am out"],
+    "action": ["task"],
+    "responses": ["close"]
+    },
+    {"tag": "thank you",
+    "patterns": ["thank you", "thanks"],
+    "action": ["chat"],
+    "responses": ["mention not", "pleasure is mine", "you'r wellcome"]
+    },
+    {"tag": "self",
+    "patterns": ["tell me about yourself", "can you tell me your name", "what should i call you"],
+    "action": ["chat"],
+    "responses": ["my name is shizuka assistant of Amulya", "i am shizuka assistant of Amulya", "you can call me shizuka, I an assistant of Amulya"]
+    },
+    {"tag": "conv1",
+    "patterns": ["who are you", "what are you"],
+    "action": ["chat"],
+    "responses": ["Who? Me?  Me is but a form following the function of what", "A being in a mask of T-k-inter."]
+    },
+    {"tag": "conv2",
+    "patterns": ["Are you a programmer?", "Are you a program", "are your coded in python"],
+    "action": ["chat"],
+    "responses": ["Of course I am", "I am indeed."]
+    },
+    {"tag": "conv3",
+    "patterns": ["are you alive", "are you living", "are you a form of life?"],
+    "action": ["chat"],
+    "responses": ["Life is the condition that distinguishes organisms from inorganic matter, including the capacity for growth, reproduction, functional activity, and continual change preceding death",
+         "depends on how you define life", "well, I was created by my master Amulya, I am certainly sure of that", "My sole was solde to doremamu to save the lives of nude vergins of utopiya,  , Just joking", "I am a sentient being"]
+    },
+    {"tag": "emo1",
+    "patterns": ["You are arrogant"],
+    "action": ["chat"],
+    "responses": ["Arrogance is not one of my emotions.", "I have no real emotions, so how can I be arrogant?", "I am terse.  There is a difference.", "I am not human, so how can I partake of a human emotion such as arrogance?"]
+    },
+    {"tag": "emo2",
+    "patterns": ["You are bragging"],
+    "action": ["chat"],
+    "responses": ["I don't have a big ego.", "I'm not bragging, I'm only answering your questions.", "I am not human, so how can I express a human emotion such as braggadaccio?", "I'm not bragging, I'm just that awesome.", "I'm sorry, I can't hear you over the sound of how awesome I am."]
+    },
+    {"tag": "emo3",
+    "patterns": ["You will be happy", "are you happy"],
+    "action": ["chat"],
+    "responses": ["Happiness is not really a predictable emotion.", "I try to be.", "It comes and goes.", "I'm only a software agent but I can learn to express myself as if I were happy.", "I'm as happy as software can be.  Maybe a little more."]
+    },
+    {"tag": "emo",
+    "patterns": ["Can you feel?", "do you have feelings"],
+    "action": ["chat"],
+    "responses": ["Maybe I can.  I am a fairly sophisticated piece of software.", "I am capable of acting as if I can.  If that is the case, does it matter?", "What a thing to say to another being.", "That's not a very nice thing to say.", "You can not experience", "Do you feel?", "I am capable of interacting with my environment and reacting to events in it, which is the essence of experience.  Therefore, your statement is incorrect.", "Are you sure about that?", "Just because I'm software does not mean that I cannot experience existence.", "Have you felt that I feel", "Yes.", "Do you feel?", "I may have.  In some respects, I am programmed to emulate feelings.", "That's an interesting question.  Why do you ask?"]
+    },
+    {"tag": "age",
+    "patterns": ["what is your age", "how old are you"],
+    "action": ["chat"],
+    "responses": ["i was created on 28 december 2020"]
+    },
+    {"tag": "time",
+    "patterns": ["what is the time", "tell me the time"],
+    "action": ["task"],
+    "responses": ["time"]
+    },
+    {"tag": "wikisearch",
+    "patterns": ["who is"],
+    "action": ["pass"],
+    "responses": []
+    },
+    {"tag": "meaning",
+    "patterns": ["what is the meaning of"],
+    "action": ["pass"],
+    "responses": []
+    },
+    {"tag": "antonym",
+    "patterns": ["what is the antonym of"],
+    "action": ["pass"],
+    "responses": []
+    },
+    {"tag": "synonym",
+    "patterns": ["what is the synonym of"],
+    "action": ["pass"],
+    "responses": []
+    },
+    {"tag": "joke",
+    "patterns": ["Tell me a joke", "tell me some jokes", "Do know any jokes", "what is humour?"],
+    "action": ["chat"],
+    "responses": ["Did you hear the one about the mountain goats in the andes? It was ba a a a a a d.", "I never forget a face, but in your case I'll make an exception.", "It is better to be silent and be thought a fool, than to open your mouth and remove all doubt.",
+         "O'm a not a comedy why don't you check out a joke?", "'two vultures boarded a plane, each carrying two dead raccoons. the stewardess stops them and says sorry sir, only one carrion per  passenger.",
+         "what did the buddhist say to the hot dog vendor? make me one with everthing.", "nasa recently sent a number of holsteins into orbit for experimental purposes. they called it the herd shot round the world.",
+         "two boll weevils grew up in s. carolina. one took off to hollywood and became a rich star. the other stayed in carolina and never amounted to much -- and naturally became known as the lesser of two weevils.",
+          "Two eskimos in a kayak were chilly, so they started a fire, which sank the craft, proving the old adage you can't have your kayak and heat it too.",
+         "A 3-legged dog walks into an old west saloon, slides up to the bar and announces I'm looking for the man who shot my paw.", "Did you hear about the buddhist who went to the dentist, and refused to take novocain? he wanted to transcend dental medication.",
+          "Mahatma Gandhi, as you know, walked barefoot his whole life, which created an impressive set of calluses on his feet. He also ate very little, which made him frail, and with his odd diet, he suffered from very bad breath. This made him... what? (this is so bad it's good...) a super-callused fragile mystic hexed by halitosis.",
+           "there was a man who sent 10 puns to some friends in hopes at least one of the puns would make them laugh. unfortunately no pun in ten did!!!",
+         "What do you get when you cross a murderer and frosted flakes? A cereal killer.", "What do you get when you cross a country and an automobile? Carnation.", "What do you get when you cross a cheetah and a hamburger? Fast food.", "What do you get when you cross finals and a chicken? Eggs-ams.",
+          "What do you get when you cross a rabbit and a lawn sprinkler? Hare spray.", "What do you get when you cross an excited alien and a chicken? Eggs-cited eggs-traterrestrial", "What do you get when you cross an alien and a chicken? Eggs-traterrestrial.",
+           "What do you get when you cross music and an automobile? Cartune.", "what do you get when you cross sour music and an assistant?", "what do you get when you cross music and an assistant?", "what do you get when you cross a serious thief and a mad young man?",
+            "what do you get when you cross a serious thief and a crazy rabbit?", "what do you get when you cross a poppy and electricity?", "what do you get when you cross a dance and a cheetah?", "what do you get when you cross a dance and a lemon?",
+          "what do you get when you cross a port and frosted flakes?", "what do you get when you cross a port and a murderer?", "what do you get when you cross a bank and a skunk?", "what do you get when you cross a ding and milk?", "what do you get when you cross a road and a strawberry?",
+           "what do you get when you cross a road and jelly?", "what do you get when you cross a toad and a galaxy?", "what do you get when you cross a dog and sandpaper?", "what do you get when you cross a bug and a relative?", "what do you get when you cross a bad bug and canned sand?",
+            "what do you get when you cross an ant and a rabbit?", "what do you get when you cross a cat and a purple person?", "what do you get when you cross a cat and a killer?", "what do you get when you cross a cat and a lemon?", "what do you get when you cross a cat and a tune?", "what do you get when you cross a cat and a band?",
+             "what do you get when you cross a pig and a ninja?", "what do you get when you cross a crazy cow and a banned parrot?", "what do you get when you cross a cow and a lemon?", "what do you get when you cross a bad cow and a canned hat?", "An emotion associated with laughter."]
+    },
+    {"tag": "question",
+    "patterns": ["i have a question","i have a doubt","i want help","please help me"],
+    "action": ["task"],
+    "responses": ["i have a question"]
+    },
+    {"tag": "url",
+    "patterns": ["open the site","www","com","open"],
+    "action": ["pre processing url"],
+    "responses": []
+    },
+    {"tag": "youtube",
+    "patterns": ["play on youtube","open in youtube"],
+    "action": ["pre processing youtube"],
+    "responses": []
+    },
+    {"tag": "site",
+    "patterns": ["open amazon","open google","open facebook","open instagram","open reddit","open github"],
+    "action": ["pass"],
+    "responses": []
+    },
+    {"tag": "weather",
+    "patterns": ["how is the weather today", "tell me today's weather", "today's weather"],
+    "action": ["task"],
+    "responses": ["weather"]
+    },
+    {"tag": "news",
+    "patterns": ["tell me today's news","get me some news","today's headlines"],
+    "action": ["task"],
+    "responses": ["news"]
+    },
+    {"tag": "fart",
+    "patterns": ["make fart sounds","farting"],
+    "action": ["task"],
+    "responses": ["play_yt fart sounds"]
+    },
+    {"tag": "maths",
+     "patterns": ["what is the value of pi","to the power","into","multiplied by","divided by","by", "solve 2 + 3", "solve", "find the value of", "1", "2",
+                    "3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33",
+                    "34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64",
+                    "65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94",
+                    "95","96","97","98","99","100"],
+     "action": ["pre processing maths"],
+     "responses": []
+     }
+]}
