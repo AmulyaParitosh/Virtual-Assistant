@@ -12,7 +12,8 @@ play = True
 compwords = []
 playerwords = []
 
-def check_word(word):
+
+def check_word(word):               #checks is the word meaningfull or not
     return (dic.meaning(word) != None)
 
 
