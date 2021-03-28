@@ -2,6 +2,7 @@ from bot_main import processor
 from text_to_speech import talk#
 import initials#
 import take_command
+from word_game import WordGame
 import tasks
 import datetime
 import wikipedia
@@ -22,6 +23,7 @@ class Run_Assistant():
         self.weather = tasks.Weather()
         self.news = tasks.News()
         self.maths = tasks.Mathparse()
+        self.word_game = WordGame()
 
         pid = os.getpid()
         gui.display(pid)
@@ -138,6 +140,9 @@ class Run_Assistant():
 
         elif typ == 'news':#
             self.news.get_news()
+
+        elif typ == 'word_game':
+            self.word_game.play()
 
         elif typ == "none":
             gui.display('\n'+'sorry I did not get you')

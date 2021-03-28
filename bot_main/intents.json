@@ -163,5 +163,10 @@
                     "95","96","97","98","99","100"],
      "action": ["task"],
      "responses": ["maths"]
+     },
+     {"tag": "word_game",
+     "patterns": ["i want to play games","play word game","open word game"],
+     "action": ["task"],
+     "responses": ["word_game"]
      }
 ]}
