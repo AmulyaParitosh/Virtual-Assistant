@@ -1,5 +1,6 @@
 .vscode/extensions.json
 .vscode/launch.json
+__pycache__
 __pycache__/ASSISTANT_2.cpython-38.pyc
 __pycache__/ASSISTANT_RUN.cpython-38.pyc
 __pycache__/comp_client.cpython-38.pyc
