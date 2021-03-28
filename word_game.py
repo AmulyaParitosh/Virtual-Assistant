@@ -20,8 +20,8 @@ class WordGame:
 
     def play(self):
 
-        gui.display("Wellcome to Word Game. Let's begin")
-        talk("Wellcome to Word Game. Let's begin")
+        gui.display("Wellcome to Word Game. Let's play")
+        talk("Wellcome to Word Game. Let's play")
 
         while self.playing:
             
