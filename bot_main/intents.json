@@ -121,7 +121,7 @@
              "what do you get when you cross a pig and a ninja?", "what do you get when you cross a crazy cow and a banned parrot?", "what do you get when you cross a cow and a lemon?", "what do you get when you cross a bad cow and a canned hat?", "An emotion associated with laughter."]
     },
     {"tag": "question",
-    "patterns": ["i have a question","i have a doubt","i want help","please help me"],
+    "patterns": ["i have a question","i have a doubt"],
     "action": ["task"],
     "responses": ["wolframalpha"]
     },
