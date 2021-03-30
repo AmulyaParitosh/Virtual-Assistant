@@ -1,11 +1,11 @@
 import speech_recognition as sr
-from GUI import gui
+from .GUI import gui
 import json
 
 
 listener = sr.Recognizer()
 
-information = json.loads(open('assistant_info.json').read())
+information = json.loads(open('assistant/main/assistant_info.json').read())
 
 for info in information["assistant"]:
     name = info["name"]

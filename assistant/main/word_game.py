@@ -1,8 +1,8 @@
 from random_word import RandomWords
 import time
-from take_command import command#
-from GUI import gui#
-from text_to_speech import talk#
+from .take_command import command#
+from .GUI import gui#
+from .text_to_speech import talk#
 from PyDictionary import PyDictionary
 
 
