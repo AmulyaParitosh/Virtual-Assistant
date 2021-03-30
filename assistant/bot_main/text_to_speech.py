@@ -1,7 +1,7 @@
 import pyttsx3
 import json
 
-information = json.loads(open('assistant/main/assistant_info.json').read())
+information = json.loads(open('assistant/bot_main/assistant_info.json').read())
 
 for info in information["assistant"]:
     voice = info["voice"]

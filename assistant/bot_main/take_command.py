@@ -1,5 +1,5 @@
 import speech_recognition as sr
-from main.GUI import gui#
+from bot_main.GUI import gui#
 
 listener = sr.Recognizer()
 

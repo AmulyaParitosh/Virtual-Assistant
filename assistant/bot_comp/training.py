@@ -11,7 +11,7 @@ from tensorflow.keras.optimizers import SGD
 
 lemmatizer = WordNetLemmatizer()
 
-intents = json.loads(open('bot_main/intents.json').read())
+intents = json.loads(open('assistant/bot_comp/intents.json').read())
 
 words = []
 classes = []
@@ -31,8 +31,8 @@ words = sorted(set(words))
 
 classes = sorted(set(classes))
 
-pickle.dump(words, open('bot_main/words.pkl', 'wb'))
-pickle.dump(classes, open('bot_main/classes.pkl', 'wb'))
+pickle.dump(words, open('assistant/bot_comp/words.pkl', 'wb'))
+pickle.dump(classes, open('assistant/bot_comp/classes.pkl', 'wb'))
 
 training = []
 output_empty = [0] * len(classes)
@@ -65,5 +65,5 @@ sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
-model.save('bot_main/chatbotmodel.h5', hist)
+model.save('assistant/bot_comp/chatbotmodel.h5', hist)
 print('Done')

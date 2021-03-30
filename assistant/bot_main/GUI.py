@@ -14,7 +14,7 @@ class GUI:
         
         self.kill_code = None
 
-        information = json.loads(open('assistant/main/assistant_info.json').read())
+        information = json.loads(open('assistant/bot_main/assistant_info.json').read())
 
         for info in information["assistant"]:
             self.name = info["name"]

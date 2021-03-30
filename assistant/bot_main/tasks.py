@@ -1,6 +1,6 @@
-from main.text_to_speech import talk#
-from main.GUI import gui#
-from main.take_command import command#
+from bot_main.text_to_speech import talk#
+from bot_main.GUI import gui#
+from bot_main.take_command import command#
 import nltk
 from PyDictionary import PyDictionary
 from pyNewsApi import PYNEWS
