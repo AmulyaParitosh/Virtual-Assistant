@@ -1,7 +1,7 @@
 import pyttsx3
 import json
 
-information = json.loads(open('assistant_info.json').read())
+information = json.loads(open('PersonalAssistant/assistant_main/assistant_info.json').read())
 
 for info in information["assistant"]:
     voice = info["voice"]
@@ -44,4 +44,4 @@ def voices_in_system():
 if __name__ == "__main__":
     talk("hiii")
     talk("all good")
-    voices_in_system()
+    #voices_in_system()

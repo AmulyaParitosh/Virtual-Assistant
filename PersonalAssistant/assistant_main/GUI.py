@@ -8,13 +8,13 @@ import requests
 
 
 
-class GUI:
+class Gui:
 
     def __init__(self):
         
         self.kill_code = None
 
-        information = json.loads(open('assistant_info.json').read())
+        information = json.loads(open('PersonalAssistant/assistant_main/assistant_info.json').read())
 
         for info in information["assistant"]:
             self.name = info["name"]
@@ -22,9 +22,9 @@ class GUI:
 
         self.gui_done = False
 
-        self.bg = Image.open("images/background.png")
-        self.conn_img = Image.open("images/connected.png")
-        self.disconn_img = Image.open("images/disconnected.png")
+        self.bg = Image.open("PersonalAssistant/images/background.png")
+        self.conn_img = Image.open("PersonalAssistant/images/connected.png")
+        self.disconn_img = Image.open("PersonalAssistant/images/disconnected.png")
 
         self.conn_state = False
 
@@ -119,4 +119,4 @@ class GUI:
         self.display_area.yview('end')
         self.display_area.config(state='disabled')
 
-gui = GUI()
+gui = Gui()

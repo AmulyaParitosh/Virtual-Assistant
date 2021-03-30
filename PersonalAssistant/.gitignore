@@ -36,3 +36,5 @@ __pycache__/wolframalpha_question.cpython-38.pyc
 bot_main/__pycache__/processor.cpython-38.pyc
 bot_main/__pycache__/take_command.cpython-38.pyc
 Testing.py
+bot_comp/__pycache__/processor.cpython-38.pyc
+bot_comp/__pycache__/take_command.cpython-38.pyc

@@ -1,12 +1,12 @@
-from bot_main import processor
-from text_to_speech import talk#
-import initials#
-import take_command
-from word_game import WordGame
-import tasks
+from assistant_comp import processor
+from assistant_main.text_to_speech import talk#
+from assistant_main import initials#
+from assistant_main import take_command
+from assistant_main.word_game import WordGame
+from assistant_main import tasks
+from assistant_main.GUI import gui
 import datetime
 import wikipedia
-from GUI import gui
 import os
 
 

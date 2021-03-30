@@ -5,7 +5,7 @@ import json
 
 listener = sr.Recognizer()
 
-information = json.loads(open('assistant_info.json').read())
+information = json.loads(open('PersonalAssistant/assistant_main/assistant_info.json').read())
 
 for info in information["assistant"]:
     name = info["name"]

@@ -1,5 +1,5 @@
 import speech_recognition as sr
-from GUI import gui#
+from GUI import gui
 
 listener = sr.Recognizer()
 
@@ -33,3 +33,6 @@ def simple_command():
     
     print('\ncommand : ' + command + '\n')        
     return command
+
+if __name__ == "__main__":
+    command()

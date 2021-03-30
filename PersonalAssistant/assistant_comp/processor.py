@@ -8,11 +8,11 @@ import json
 
 
 lemmatizer = WordNetLemmatizer()
-intents = json.loads(open('bot_main/intents.json').read())
+intents = json.loads(open('PersonalAssistant/assistant_comp/intents.json').read())
 
-words = pickle.load(open('bot_main/words.pkl', 'rb'))
-classes = pickle.load(open('bot_main/classes.pkl', 'rb'))
-model = load_model('bot_main/chatbotmodel.h5')
+words = pickle.load(open('PersonalAssistant/assistant_comp/words.pkl', 'rb'))
+classes = pickle.load(open('PersonalAssistant/assistant_comp/classes.pkl', 'rb'))
+model = load_model('PersonalAssistant/assistant_comp/chatbotmodel.h5')
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
