@@ -18,3 +18,10 @@ for theme in information["Themes"]:
         fg_colour = theme["fg_colour"]
         base_font = theme["base_font"]
         title_font = theme["title_font"]
+
+def get_themes():
+    for theme in information["Themes"]:
+        print(theme["name"])
+
+if __name__ == "__main__":
+    get_themes()
