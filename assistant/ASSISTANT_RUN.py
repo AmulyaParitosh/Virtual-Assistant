@@ -1,12 +1,12 @@
-from bot_main import processor
-from text_to_speech import talk#
-import initials#
-import take_command
-from word_game import WordGame
-import tasks
+from bot_comp import processor
+from bot_main.text_to_speech import talk#
+from bot_main import initials#
+from bot_main import take_command
+from bot_main.word_game import WordGame
+from bot_main import tasks
+from bot_main.GUI import gui
 import datetime
 import wikipedia
-from GUI import gui
 import os
 
 
@@ -79,6 +79,10 @@ class Run_Assistant():
             res = processor.get_response(ints)
             
             if action == "chat":            
+                return "response", res
+
+            elif action == "chat_self":
+                res = res.replace("<@NAME>",initials.name)
                 return "response", res
 
             elif action == "task":            

@@ -14,7 +14,7 @@ class GUI:
         
         self.kill_code = None
 
-        information = json.loads(open('assistant_info.json').read())
+        information = json.loads(open('assistant/bot_main/assistant_info.json').read())
 
         for info in information["assistant"]:
             self.name = info["name"]
@@ -22,9 +22,9 @@ class GUI:
 
         self.gui_done = False
 
-        self.bg = Image.open("images/background.png")
-        self.conn_img = Image.open("images/connected.png")
-        self.disconn_img = Image.open("images/disconnected.png")
+        self.bg = Image.open("assistant/images/background.png")
+        self.conn_img = Image.open("assistant/images/connected.png")
+        self.disconn_img = Image.open("assistant/images/disconnected.png")
 
         self.conn_state = False
 

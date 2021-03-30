@@ -31,8 +31,8 @@
     },
     {"tag": "self",
     "patterns": ["tell me about yourself", "can you tell me your name", "what should i call you"],
-    "action": ["chat"],
-    "responses": ["my name is shizuka assistant of Amulya", "i am shizuka assistant of Amulya", "you can call me shizuka, I an assistant of Amulya"]
+    "action": ["chat_self"],
+    "responses": ["my name is <@NAME> assistant of Amulya", "i am <@NAME> assistant of Amulya", "you can call me <@NAME>, I an assistant of Amulya"]
     },
     {"tag": "conv1",
     "patterns": ["who are you", "what are you"],
