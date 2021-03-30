@@ -1,14 +1,10 @@
 import speech_recognition as sr
 from bot_main.GUI import gui
-import json
+from configurations import theme
 
 
 listener = sr.Recognizer()
-
-information = json.loads(open('assistant/bot_main/assistant_info.json').read())
-
-for info in information["assistant"]:
-    name = info["name"]
+name = theme.name
 
 
 def initials():

@@ -82,7 +82,7 @@ class Run_Assistant():
                 return "response", res
 
             elif action == "chat_self":
-                res = res.replace("<@NAME>",initials.name)
+                res = res.replace("<@NAME>", initials.name)
                 return "response", res
 
             elif action == "task":            
@@ -90,6 +90,7 @@ class Run_Assistant():
 
             else:
                 return "none", "none"
+
         else:
             return "none", "none"
 

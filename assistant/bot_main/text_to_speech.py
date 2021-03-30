@@ -1,10 +1,6 @@
 import pyttsx3
-import json
+from configurations import theme
 
-information = json.loads(open('assistant/bot_main/assistant_info.json').read())
-
-for info in information["assistant"]:
-    voice = info["voice"]
 
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
@@ -18,7 +14,7 @@ names = {
         }
 
 
-engine.setProperty('voice', voices[names[voice]].id)
+engine.setProperty('voice', voices[names[theme.voice]].id)
 engine.setProperty('rate', 220)
 
 def talk(text):

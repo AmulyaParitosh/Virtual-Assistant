@@ -1,10 +1,10 @@
 import threading
 import tkinter
 from tkinter import scrolledtext
-import json
 from PIL import ImageTk,Image
 import subprocess as s
 import requests
+from configurations import theme
 
 
 
@@ -14,17 +14,14 @@ class GUI:
         
         self.kill_code = None
 
-        information = json.loads(open('assistant/bot_main/assistant_info.json').read())
-
-        for info in information["assistant"]:
-            self.name = info["name"]
-            self.ascii_art = info["ascii"]
+        self.name = theme.name
+        self.ascii_art = theme.art
 
         self.gui_done = False
 
-        self.bg = Image.open("assistant/images/background.png")
-        self.conn_img = Image.open("assistant/images/connected.png")
-        self.disconn_img = Image.open("assistant/images/disconnected.png")
+        self.bg = Image.open(theme.bg_image)
+        self.conn_img = Image.open("assistant/configurations/images/connected.png")
+        self.disconn_img = Image.open("assistant/configurations/images/disconnected.png")
 
         self.conn_state = False
 
@@ -44,20 +41,20 @@ class GUI:
         self.bgimage = ImageTk.PhotoImage(self.bg)
         self.conn_img = ImageTk.PhotoImage(self.conn_img)
         self.disconn_img = ImageTk.PhotoImage(self.disconn_img)
-        self.win.configure(bg="grey10", relief="solid")
+        self.win.configure(bg=theme.label_bg_colour, relief="solid")
 
         self.background = tkinter.Label(self.win, image = self.bgimage) 
         self.background.place(relx=0.5, rely=0.5, anchor="center")
 
-        self.title = tkinter.Label(self.win, text=f"{self.name}", bg="grey10", fg="white")
-        self.title.config(font=("Freestyle Script", 40, 'bold', 'underline'))
+        self.title = tkinter.Label(self.win, text=f"{self.name}", bg=theme.label_bg_colour, fg=theme.fg_colour)
+        self.title.config(font=(theme.title_font, 40, 'bold', 'underline'))
         self.title.pack(padx=20, pady=0)
 
         self.connection = tkinter.Label(self.win, image=self.disconn_img)
         self.connection.place(x=365,y=8)
 
-        self.display_area = scrolledtext.ScrolledText(self.win, width=52, height=35, bg="grey20", fg="white", bd="4", relief="solid")
-        self.display_area.config(font=("Arial", 10))
+        self.display_area = scrolledtext.ScrolledText(self.win, width=52, height=35, bg=theme.scrolltext_bg_colour, fg=theme.fg_colour, bd="4", relief="solid")
+        self.display_area.config(font=("theme.base_font", 10))
         self.display_area.pack(padx=20, pady=0)
         
         for line in self.ascii_art:
@@ -65,12 +62,12 @@ class GUI:
         
         self.display_area.config(state='disabled')
 
-        self.footer = tkinter.Label(self.win, text="speak to give command...", bg="grey10", fg="white")
+        self.footer = tkinter.Label(self.win, text="speak to give command...", bg=theme.label_bg_colour, fg=theme.fg_colour)
         self.footer.place(x=25,y=645)
-        self.footer.config(font=("Arial", 12, 'italic'))
+        self.footer.config(font=("theme.base_font", 12, 'italic'))
 
-        self.clear_button = tkinter.Button(self.win, text="Clear Screen", command=self.clear, relief="solid", bg="grey20", fg="white")
-        self.clear_button.config(font=("Arial", 10))
+        self.clear_button = tkinter.Button(self.win, text="Clear Screen", command=self.clear, relief="solid", bg=theme.button_colour, fg=theme.fg_colour)
+        self.clear_button.config(font=("theme.base_font", 10))
         self.clear_button.pack(side='right', padx=20, pady=10)
 
         self.gui_done = True
