@@ -1,6 +1,6 @@
 from bot_comp import processor
-from bot_main.text_to_speech import talk#
-from bot_main import initials#
+from bot_main.text_to_speech import talk
+from bot_main import initials
 from bot_main import take_command
 from bot_main.word_game import WordGame
 from bot_main import tasks
@@ -10,11 +10,10 @@ import wikipedia
 import os
 
 
-
 class Run_Assistant():
 
     def __init__(self):
-    
+
         self.greet = True
 
         self.dictionary = tasks.Dictionary()
@@ -32,17 +31,17 @@ class Run_Assistant():
 
         hour = datetime.datetime.now().hour
 
-        if hour>=21 or hour<=2:
+        if hour >= 21 or hour <= 2:
             gui.display('\n'+"Good Night, Sleep Tight," +
-                "\n Don't Let The Bed Bugs Bight")
+                        "\n Don't Let The Bed Bugs Bight")
             talk("Good night sleep tight, don't let the bed bugs bight")
             gui.stop()
             exit()                      # closes perform_task
 
         elif hour > 2 and hour < 4:
             gui.display('\n Abee soo jaa BSDK')
-            talk('Abee so jaa B S D K') 
-            gui.stop() 
+            talk('Abee so jaa B S D K')
+            gui.stop()
             exit()                      # closes perform_task
 
         else:
@@ -54,16 +53,16 @@ class Run_Assistant():
     def greatings(self):
 
         hour = datetime.datetime.now().hour
-        if hour>=0 and hour<12:
+        if hour >= 0 and hour < 12:
             gui.display('\n'+"Hello,Good Morning\n")
             talk("Hello, Good Morning")
             talk("How may I help you?")
-            
-        elif hour>=12 and hour<16:
+
+        elif hour >= 12 and hour < 16:
             gui.display('\n'+"Hello,Good Afternoon\n")
             talk("Hello, Good Afternoon")
             talk("How may I help you?")
-            
+
         else:
             gui.display("Hello,Good Evening\n")
             talk("Hello, Good Evening")
@@ -73,19 +72,19 @@ class Run_Assistant():
         message = take_command.command()
 
         if 'none' not in message:
-            
+
             ints = processor.predict_class(message)
             action = processor.get_action(ints)
             res = processor.get_response(ints)
-            
-            if action == "chat":            
+
+            if action == "chat":
                 return "response", res
 
             elif action == "chat_self":
                 res = res.replace("<@NAME>", initials.name)
                 return "response", res
 
-            elif action == "task":            
+            elif action == "task":
                 return res, message
 
             else:
@@ -96,54 +95,54 @@ class Run_Assistant():
 
     def perform_task(self):
 
-        typ,command = self.get_task()
-        
-        if typ == "response":#
+        typ, command = self.get_task()
+
+        if typ == "response":
             gui.display(command)
             talk(command)
 
-        elif typ == "close":#
+        elif typ == "close":
             self.close()
 
-        elif typ == 'time':#
+        elif typ == 'time':
             time = datetime.datetime.now().strftime('%I:%M:%p')
             gui.display('\n'+time)
-            talk('the time is ' + time.replace(':', '') )
+            talk('the time is ' + time.replace(':', ''))
 
-        elif typ == "wikisearch":#
+        elif typ == "wikisearch":
             wikisearch = command.replace('who is', '')
-            info = wikipedia.summary(wikisearch,2)
+            info = wikipedia.summary(wikisearch, 2)
             gui.display('\n'+info)
             talk(info)
 
-        elif typ == "meaning":#
+        elif typ == "meaning":
             self.dictionary.meaning(command)
 
-        elif typ == "antonym":#
-            self.dictionary.antonym(command)       
+        elif typ == "antonym":
+            self.dictionary.antonym(command)
 
-        elif typ == "synonym":#
+        elif typ == "synonym":
             self.dictionary.synonym(command)
-            
-        elif typ == "wolframalpha":#
+
+        elif typ == "wolframalpha":
             self.question.question()
-            
-        elif typ == "url":#
+
+        elif typ == "url":
             self.open_in_browser.open_url(command)
 
-        elif typ == "open site":#
+        elif typ == "open site":
             self.open_in_browser.open_special(command)
 
-        elif typ == "youtube":#
+        elif typ == "youtube":
             self.open_in_browser.play_in_yt(command)
 
-        elif typ == "weather":#
+        elif typ == "weather":
             self.weather.get_weather()
 
-        elif typ == "maths":#
+        elif typ == "maths":
             self.maths.solve(command)
 
-        elif typ == 'news':#
+        elif typ == 'news':
             self.news.get_news()
 
         elif typ == 'word_game':
@@ -164,6 +163,7 @@ class Run_Assistant():
                     self.greatings()
                     self.greet = False
                 self.perform_task()
+
 
 assistant = Run_Assistant()
 try:

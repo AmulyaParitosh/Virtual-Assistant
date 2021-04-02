@@ -1,13 +1,14 @@
 from random_word import RandomWords
 import time
-from bot_main.take_command import command#
-from bot_main.GUI import gui#
-from bot_main.text_to_speech import talk#
+from bot_main.take_command import command
+from bot_main.GUI import gui
+from bot_main.text_to_speech import talk
 from PyDictionary import PyDictionary
 
 
 dic = PyDictionary()
 rw = RandomWords()
+
 
 class WordGame:
 
@@ -17,20 +18,19 @@ class WordGame:
         self.compwords = []
         self.playerwords = []
 
-
     def play(self):
 
         gui.display("Wellcome to Word Game. Let's play")
         talk("Wellcome to Word Game. Let's play")
 
         while self.playing:
-            
+
             compword = rw.get_random_word(hasDictionaryDef="true")
             self.compwords.append(compword)
             gui.display(compword)
             talk(compword)
 
-            reply = command()  
+            reply = command()
 
             if reply != 'none':
 
