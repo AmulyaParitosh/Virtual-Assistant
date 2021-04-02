@@ -14,14 +14,14 @@ class GUI:
         self.kill_code = None
 
         self.name = theme.name
+        conn_img = theme.conn_image
+        disconn_img = theme.disconn_image
 
         self.gui_done = False
 
         self.bg = Image.open(theme.bg_image)
-        self.conn_img = Image.open(
-            "assistant/configurations/images/connected.png")
-        self.disconn_img = Image.open(
-            "assistant/configurations/images/disconnected.png")
+        self.conn_img = Image.open(conn_img)
+        self.disconn_img = Image.open(disconn_img)
 
         self.conn_state = False
 
