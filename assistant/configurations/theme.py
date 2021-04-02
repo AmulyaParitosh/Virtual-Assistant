@@ -2,7 +2,7 @@ import json
 
 information = json.loads(open('assistant/configurations/themes.json').read())
 
-Theme = "Nobita"
+Theme = "Shizuka"
 
 for theme in information["Themes"]:
 
@@ -20,8 +20,9 @@ for theme in information["Themes"]:
 
 
 def get_themes():
+    print("\nAvailable Themes are:- ")
     for theme in information["Themes"]:
-        print(theme["name"])
+        print("\t", theme["name"])
 
 
 if __name__ == "__main__":
