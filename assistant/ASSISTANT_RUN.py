@@ -1,7 +1,6 @@
 from bot_comp import processor
 from bot_main.text_to_speech import talk
 from bot_main.take_command import *
-# from bot_main.word_game import WordGame
 from bot_main.utilities import *
 from bot_main.GUI import gui
 import datetime
