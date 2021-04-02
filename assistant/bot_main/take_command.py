@@ -1,11 +1,11 @@
 import speech_recognition as sr
-from bot_main.GUI import gui#
+from bot_main.GUI import gui
 
 listener = sr.Recognizer()
 
 
 def command():
-       
+
     try:
         with sr.Microphone() as source:
             gui.display('listening...\n')
@@ -15,12 +15,13 @@ def command():
 
     except:
         command = 'none'
-    
-    gui.display('->> ' + command + '\n')        
+
+    gui.display('->> ' + command + '\n')
     return command
 
+
 def simple_command():
-       
+
     try:
         with sr.Microphone() as source:
             print('listening...')
@@ -30,6 +31,6 @@ def simple_command():
 
     except:
         command = 'none'
-    
-    print('\ncommand : ' + command + '\n')        
+
+    print('\ncommand : ' + command + '\n')
     return command

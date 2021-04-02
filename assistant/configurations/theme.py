@@ -8,7 +8,7 @@ for theme in information["Themes"]:
 
     if theme["name"] == Theme:
 
-        name = theme["name"]        
+        name = theme["name"]
         voice = theme["voice"]
         art = theme["ascii"]
         bg_image = theme["bg_image"]
@@ -19,9 +19,11 @@ for theme in information["Themes"]:
         base_font = theme["base_font"]
         title_font = theme["title_font"]
 
+
 def get_themes():
     for theme in information["Themes"]:
         print(theme["name"])
+
 
 if __name__ == "__main__":
     get_themes()
