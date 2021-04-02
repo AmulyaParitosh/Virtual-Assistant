@@ -8,7 +8,7 @@ def command():
 
     try:
         with sr.Microphone() as source:
-            gui.display('listening...\n')
+            gui.display('\tlistening...\n')
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             command = command.lower()

@@ -1,5 +1,6 @@
 {"Themes" : [
     {"name" : "Shizuka",
+    "color scheme" : "Dark",
     "voice" : "Heera",
     "bg_image" : "assistant/configurations/images/Shizuka/background.png",
     "conn_image" : "assistant/configurations/images/Shizuka/connected.png",
@@ -12,13 +13,14 @@
     "title_font" : "Freestyle Script"
     },
     {"name" : "Nobita",
+    "color scheme" : "Light",
     "voice" : "Heera",
     "bg_image" : "assistant/configurations/images/Nobita/background.png",
     "conn_image" : "assistant/configurations/images/Nobita/connected.png",
     "disconn_image" : "assistant/configurations/images/Nobita/disconnected.png",
-    "label_bg_colour" : "#ffffff",
-    "scrolltext_bg_colour" : "#ffffff",
-    "button_colour" : "#ffffff",
+    "label_bg_colour" : "#dbdbdb",
+    "scrolltext_bg_colour" : "#dbdbdb",
+    "button_colour" : "#dbdbdb",
     "fg_colour" : "#000000",
     "base_font" : "Arial",
     "title_font" : "Algerian"

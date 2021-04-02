@@ -12,7 +12,7 @@ def initials():
 
     try:
         with sr.Microphone() as source:
-            gui.display("...")
+            gui.display("...\n")
             voice = listener.listen(source)
             recognise_name = listener.recognize_google(voice)
             recognise_name = recognise_name.lower()

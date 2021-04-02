@@ -98,7 +98,7 @@ class Run_Assistant():
         typ, command = self.get_task()
 
         if typ == "response":
-            gui.display(command)
+            gui.display(command+"\n")
             talk(command)
 
         elif typ == "close":
