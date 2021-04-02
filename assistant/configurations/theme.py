@@ -10,7 +10,6 @@ for theme in information["Themes"]:
 
         name = theme["name"]
         voice = theme["voice"]
-        art = theme["ascii"]
         bg_image = theme["bg_image"]
         label_bg_colour = theme["label_bg_colour"]
         scrolltext_bg_colour = theme["scrolltext_bg_colour"]

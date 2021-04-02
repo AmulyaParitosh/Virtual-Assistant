@@ -14,7 +14,6 @@ class GUI:
         self.kill_code = None
 
         self.name = theme.name
-        self.ascii_art = theme.art
 
         self.gui_done = False
 
@@ -58,10 +57,6 @@ class GUI:
             self.win, width=52, height=35, bg=theme.scrolltext_bg_colour, fg=theme.fg_colour, bd="4", relief="solid")
         self.display_area.config(font=("theme.base_font", 10))
         self.display_area.pack(padx=20, pady=0)
-
-        for line in self.ascii_art:
-            self.display_area.insert('end', line)
-
         self.display_area.config(state='disabled')
 
         self.footer = tkinter.Label(
@@ -107,7 +102,7 @@ class GUI:
         if type(message) == int:
 
             self.kill_code = message
-            message = "Ready to GO!\n"
+            message = "_____________________Ready to GO!___________________\n\n"
 
         elif "->>" not in message and "listening..." not in message:
             message = f"{self.name} : {message}\n"
