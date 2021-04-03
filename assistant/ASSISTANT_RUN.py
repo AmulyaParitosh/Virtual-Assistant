@@ -1,9 +1,7 @@
 from bot_comp import processor
 from bot_main.text_to_speech import talk
-from bot_main import initials
-from bot_main import take_command
-from bot_main.word_game import WordGame
-from bot_main import tasks
+from bot_main.take_command import *
+from bot_main.utilities import *
 from bot_main.GUI import gui
 import datetime
 import wikipedia
@@ -16,12 +14,12 @@ class Run_Assistant():
 
         self.greet = True
 
-        self.dictionary = tasks.Dictionary()
-        self.question = tasks.Ask_question()
-        self.open_in_browser = tasks.Open_in_browser()
-        self.weather = tasks.Weather()
-        self.news = tasks.News()
-        self.maths = tasks.Mathparse()
+        self.dictionary = Dictionary()
+        self.question = Ask_question()
+        self.open_in_browser = Open_in_browser()
+        self.weather = Weather()
+        self.news = News()
+        self.maths = Mathparse()
         self.word_game = WordGame()
 
         pid = os.getpid()
@@ -69,7 +67,7 @@ class Run_Assistant():
             talk("How may I help you?")
 
     def get_task(self):
-        message = take_command.command()
+        message = command()
 
         if 'none' not in message:
 
@@ -81,7 +79,7 @@ class Run_Assistant():
                 return "response", res
 
             elif action == "chat_self":
-                res = res.replace("<@NAME>", initials.name)
+                res = res.replace("<@NAME>", name)
                 return "response", res
 
             elif action == "task":
@@ -98,7 +96,7 @@ class Run_Assistant():
         typ, command = self.get_task()
 
         if typ == "response":
-            gui.display(command)
+            gui.display(command+"\n")
             talk(command)
 
         elif typ == "close":
@@ -156,7 +154,7 @@ class Run_Assistant():
 
         while True:
 
-            while initials.initials():
+            while initials():
 
                 talk('yes sir')
                 if self.greet:
@@ -169,6 +167,6 @@ assistant = Run_Assistant()
 try:
     assistant.RUN()
 
-except Exception:
-    print("An error occored")
+except Exception as e:
+    print("An EXCEPTION ouucred:-\n", e)
     assistant.RUN()
