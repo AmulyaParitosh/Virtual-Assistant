@@ -2,7 +2,7 @@ import json
 
 information = json.loads(open('assistant/configurations/themes.json').read())
 
-Theme = "Nobita"
+Theme = "Shizuka"
 
 for theme in information["Themes"]:
 

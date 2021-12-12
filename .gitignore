@@ -5,3 +5,7 @@ assistant/configurations/__pycache__/theme.cpython-39.pyc
 assistant/bot_comp/__pycache__/__init__.cpython-39.pyc
 assistant/bot_comp/__pycache__/processor.cpython-39.pyc
 .directory
+assistant/bot_main/__pycache__/GUI.cpython-39.pyc
+assistant/bot_main/__pycache__/initials.cpython-39.pyc
+assistant/bot_main/__pycache__/take_command.cpython-39.pyc
+assistant/bot_main/__pycache__/word_game.cpython-39.pyc
