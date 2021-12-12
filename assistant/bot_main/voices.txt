@@ -1,0 +1,450 @@
+Vices:ID: afrikaans
+Name: afrikaans
+Age: None
+Gender: male
+Languages Known: [b'\x05af']
+
+ID: aragonese
+Name: aragonese
+Age: None
+Gender: male
+Languages Known: [b'\x05an']
+
+ID: bulgarian
+Name: bulgarian
+Age: None
+Gender: None
+Languages Known: [b'\x05bg']
+
+ID: bengali
+Name: bengali
+Age: None
+Gender: male
+Languages Known: [b'\x05bn']
+
+ID: bosnian
+Name: bosnian
+Age: None
+Gender: male
+Languages Known: [b'\x05bs']
+
+ID: catalan
+Name: catalan
+Age: None
+Gender: male
+Languages Known: [b'\x05ca']
+
+ID: czech
+Name: czech
+Age: None
+Gender: male
+Languages Known: [b'\x05cs']
+
+ID: welsh
+Name: welsh
+Age: None
+Gender: male
+Languages Known: [b'\x05cy']
+
+ID: danish
+Name: danish
+Age: None
+Gender: male
+Languages Known: [b'\x05da']
+
+ID: german
+Name: german
+Age: None
+Gender: male
+Languages Known: [b'\x05de']
+
+ID: greek
+Name: greek
+Age: None
+Gender: male
+Languages Known: [b'\x05el']
+
+ID: default
+Name: default
+Age: None
+Gender: male
+Languages Known: [b'\x05en']
+
+ID: english
+Name: english
+Age: None
+Gender: male
+Languages Known: [b'\x02en-gb']
+
+ID: en-scottish
+Name: en-scottish
+Age: None
+Gender: male
+Languages Known: [b'\x05en-sc']
+
+ID: english-north
+Name: english-north
+Age: None
+Gender: male
+Languages Known: [b'\x05en-uk-north']
+
+ID: english_rp
+Name: english_rp
+Age: None
+Gender: male
+Languages Known: [b'\x05en-uk-rp']
+
+ID: english_wmids
+Name: english_wmids
+Age: None
+Gender: male
+Languages Known: [b'\x05en-uk-wmids']
+
+ID: english-us
+Name: english-us
+Age: None
+Gender: male
+Languages Known: [b'\x02en-us']
+
+ID: en-westindies
+Name: en-westindies
+Age: None
+Gender: male
+Languages Known: [b'\x05en-wi']
+
+ID: esperanto
+Name: esperanto
+Age: None
+Gender: male
+Languages Known: [b'\x05eo']
+
+ID: spanish
+Name: spanish
+Age: None
+Gender: male
+Languages Known: [b'\x05es']
+
+ID: spanish-latin-am
+Name: spanish-latin-am
+Age: None
+Gender: male
+Languages Known: [b'\x05es-la']
+
+ID: estonian
+Name: estonian
+Age: None
+Gender: None
+Languages Known: [b'\x05et']
+
+ID: basque-test
+Name: basque-test
+Age: None
+Gender: None
+Languages Known: [b'\x05eu']
+
+ID: Persian+English-UK
+Name: Persian+English-UK
+Age: None
+Gender: None
+Languages Known: [b'\x05fa']
+
+ID: Persian+English-US
+Name: Persian+English-US
+Age: None
+Gender: None
+Languages Known: [b'\x05fa']
+
+ID: persian-pinglish
+Name: persian-pinglish
+Age: None
+Gender: None
+Languages Known: [b'\x05fa-pin']
+
+ID: finnish
+Name: finnish
+Age: None
+Gender: male
+Languages Known: [b'\x05fi']
+
+ID: french-Belgium
+Name: french-Belgium
+Age: None
+Gender: male
+Languages Known: [b'\x05fr-be']
+
+ID: french
+Name: french
+Age: None
+Gender: male
+Languages Known: [b'\x05fr-fr']
+
+ID: irish-gaeilge
+Name: irish-gaeilge
+Age: None
+Gender: None
+Languages Known: [b'\x05ga']
+
+ID: greek-ancient
+Name: greek-ancient
+Age: None
+Gender: male
+Languages Known: [b'\x05grc']
+
+ID: gujarati-test
+Name: gujarati-test
+Age: None
+Gender: None
+Languages Known: [b'\x05gu']
+
+ID: hindi
+Name: hindi
+Age: None
+Gender: male
+Languages Known: [b'\x05hi']
+
+ID: croatian
+Name: croatian
+Age: None
+Gender: male
+Languages Known: [b'\x05hr']
+
+ID: hungarian
+Name: hungarian
+Age: None
+Gender: male
+Languages Known: [b'\x05hu']
+
+ID: armenian
+Name: armenian
+Age: None
+Gender: male
+Languages Known: [b'\x05hy']
+
+ID: armenian-west
+Name: armenian-west
+Age: None
+Gender: male
+Languages Known: [b'\x05hy-west']
+
+ID: interlingua
+Name: interlingua
+Age: None
+Gender: None
+Languages Known: [b'\x05ia']
+
+ID: indonesian
+Name: indonesian
+Age: None
+Gender: male
+Languages Known: [b'\x05id']
+
+ID: icelandic
+Name: icelandic
+Age: None
+Gender: male
+Languages Known: [b'\x05is']
+
+ID: italian
+Name: italian
+Age: None
+Gender: male
+Languages Known: [b'\x05it']
+
+ID: lojban
+Name: lojban
+Age: None
+Gender: None
+Languages Known: [b'\x05jbo']
+
+ID: georgian
+Name: georgian
+Age: None
+Gender: None
+Languages Known: [b'\x05ka']
+
+ID: kannada
+Name: kannada
+Age: None
+Gender: None
+Languages Known: [b'\x05kn']
+
+ID: kurdish
+Name: kurdish
+Age: None
+Gender: male
+Languages Known: [b'\x05ku']
+
+ID: latin
+Name: latin
+Age: None
+Gender: male
+Languages Known: [b'\x05la']
+
+ID: lingua_franca_nova
+Name: lingua_franca_nova
+Age: None
+Gender: male
+Languages Known: [b'\x05lfn']
+
+ID: lithuanian
+Name: lithuanian
+Age: None
+Gender: male
+Languages Known: [b'\x05lt']
+
+ID: latvian
+Name: latvian
+Age: None
+Gender: male
+Languages Known: [b'\x05lv']
+
+ID: macedonian
+Name: macedonian
+Age: None
+Gender: male
+Languages Known: [b'\x05mk']
+
+ID: malayalam
+Name: malayalam
+Age: None
+Gender: male
+Languages Known: [b'\x05ml']
+
+ID: malay
+Name: malay
+Age: None
+Gender: male
+Languages Known: [b'\x05ms']
+
+ID: nepali
+Name: nepali
+Age: None
+Gender: male
+Languages Known: [b'\x05ne']
+
+ID: dutch
+Name: dutch
+Age: None
+Gender: male
+Languages Known: [b'\x05nl']
+
+ID: norwegian
+Name: norwegian
+Age: None
+Gender: male
+Languages Known: [b'\x05no']
+
+ID: punjabi
+Name: punjabi
+Age: None
+Gender: None
+Languages Known: [b'\x05pa']
+
+ID: polish
+Name: polish
+Age: None
+Gender: male
+Languages Known: [b'\x05pl']
+
+ID: brazil
+Name: brazil
+Age: None
+Gender: male
+Languages Known: [b'\x05pt-br']
+
+ID: portugal
+Name: portugal
+Age: None
+Gender: male
+Languages Known: [b'\x05pt-pt']
+
+ID: romanian
+Name: romanian
+Age: None
+Gender: male
+Languages Known: [b'\x05ro']
+
+ID: russian
+Name: russian
+Age: None
+Gender: male
+Languages Known: [b'\x05ru']
+
+ID: slovak
+Name: slovak
+Age: None
+Gender: male
+Languages Known: [b'\x05sk']
+
+ID: albanian
+Name: albanian
+Age: None
+Gender: male
+Languages Known: [b'\x05sq']
+
+ID: serbian
+Name: serbian
+Age: None
+Gender: male
+Languages Known: [b'\x05sr']
+
+ID: swedish
+Name: swedish
+Age: None
+Gender: male
+Languages Known: [b'\x05sv']
+
+ID: swahili-test
+Name: swahili-test
+Age: None
+Gender: male
+Languages Known: [b'\x05sw']
+
+ID: tamil
+Name: tamil
+Age: None
+Gender: male
+Languages Known: [b'\x05ta']
+
+ID: telugu-test
+Name: telugu-test
+Age: None
+Gender: None
+Languages Known: [b'\x05te']
+
+ID: turkish
+Name: turkish
+Age: None
+Gender: male
+Languages Known: [b'\x05tr']
+
+ID: vietnam
+Name: vietnam
+Age: None
+Gender: male
+Languages Known: [b'\x05vi']
+
+ID: vietnam_hue
+Name: vietnam_hue
+Age: None
+Gender: male
+Languages Known: [b'\x05vi-hue']
+
+ID: vietnam_sgn
+Name: vietnam_sgn
+Age: None
+Gender: male
+Languages Known: [b'\x05vi-sgn']
+
+ID: Mandarin
+Name: Mandarin
+Age: None
+Gender: male
+Languages Known: [b'\x05zh']
+
+ID: cantonese
+Name: cantonese
+Age: None
+Gender: male
+Languages Known: [b'\x05zh-yue']
+

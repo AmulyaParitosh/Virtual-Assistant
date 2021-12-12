@@ -1,5 +1,5 @@
 import pyttsx3
-from configurations import theme
+# from configurations import theme
 
 
 engine = pyttsx3.init()
@@ -14,8 +14,10 @@ names = {
 }
 
 
-engine.setProperty('voice', voices[names[theme.voice]].id)
-engine.setProperty('rate', 220)
+# engine.setProperty('voice', voices[names[theme.voice]].id)
+engine.setProperty('voice', 'english')
+
+engine.setProperty('rate', 150)
 
 
 def talk(text):
@@ -32,15 +34,18 @@ def voices_in_system():
 
     for voice in voices:
         # to get the info. about various voices in our PC
-        print("Voice:")
-        print("ID: %s" % voice.id)
-        print("Name: %s" % voice.name)
-        print("Age: %s" % voice.age)
-        print("Gender: %s" % voice.gender)
-        print("Languages Known: %s" % voice.languages)
+        with open("assistant/bot_main/voices.txt", 'w') as file:
+            file.write("Vices:")
+            for voice in voices:
+                file.write("ID: %s\n" % voice.id)
+                file.write("Name: %s\n" % voice.name)
+                file.write("Age: %s\n" % voice.age)
+                file.write("Gender: %s\n" % voice.gender)
+                file.write("Languages Known: %s\n" % voice.languages)
+                file.write("\n")
 
 
 if __name__ == "__main__":
-    talk("hiii")
+    talk("hi, How are you?")
     talk("all good")
-    voices_in_system()
+    # voices_in_system()
