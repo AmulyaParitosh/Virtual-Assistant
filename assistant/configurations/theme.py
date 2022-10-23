@@ -10,8 +10,9 @@ for theme in information["Themes"]:
 
         name = theme["name"]
         voice = theme["voice"]
-        art = theme["ascii"]
         bg_image = theme["bg_image"]
+        conn_image = theme["conn_image"]
+        disconn_image = theme["disconn_image"]
         label_bg_colour = theme["label_bg_colour"]
         scrolltext_bg_colour = theme["scrolltext_bg_colour"]
         button_colour = theme["button_colour"]
@@ -21,8 +22,10 @@ for theme in information["Themes"]:
 
 
 def get_themes():
+    print("\nAvailable Themes are:- ")
+    print("\t NAME\t\t SCHEME")
     for theme in information["Themes"]:
-        print(theme["name"])
+        print("\t", theme["name"], "\t-", theme["color scheme"])
 
 
 if __name__ == "__main__":

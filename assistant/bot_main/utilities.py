@@ -10,6 +10,8 @@ import validators
 import json
 import wolframalpha
 from mathparse import mathparse
+from random_word import RandomWords
+import time
 
 
 def get_stem(sentence, de_word: list):
@@ -328,3 +330,60 @@ class Mathparse():
 
         gui.display(f"{expression} = {ans}")
         talk(f"{expression} = {ans}")
+
+
+class WordGame:
+
+    def __init__(self):
+
+        self.dic = PyDictionary()
+        self.rw = RandomWords()
+
+        self.playing = True
+        self.compwords = []
+        self.playerwords = []
+
+    def play(self):
+
+        gui.display("Wellcome to Word Game. Let's play")
+        talk("Wellcome to Word Game. Let's play")
+
+        while self.playing:
+
+            compword = self.rw.get_random_word(hasDictionaryDef="true")
+            self.compwords.append(compword)
+            gui.display(compword)
+            talk(compword)
+
+            reply = command()
+
+            if reply != 'none':
+
+                if self.dic.meaning(reply) != None:
+
+                    if compword[-1] == reply[0]:
+
+                        if reply not in self.playerwords and reply not in self.compwords:
+                            self.playerwords.append(reply)
+
+                        else:
+                            gui.display("you used that word already")
+                            talk("you used that word already")
+                            gui.display("you loose")
+                            talk("you loose")
+                            self.playing = False
+
+                    else:
+                        gui.display("Against the rule, you loose")
+                        talk("Against the rule, you loose")
+                        self.playing = False
+
+                else:
+                    gui.display("Not a Real Word, You loose")
+                    talk("Not a Real Word, You loose")
+                    self.playing = False
+
+            else:
+                gui.display('Too late!! You loose')
+                talk("too late, you loose")
+                self.playing = False
